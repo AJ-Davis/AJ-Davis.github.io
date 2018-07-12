@@ -18,7 +18,7 @@ The goal of the project is to utilize MTA turnstile data to create a meaningful 
 
 After brainstorming and consulting existing academic studies, we believe that the target archetype is a high-income, female commuter who is employed in the tech industry.
 
-![alt text](https://github.com/AJ-Davis/AJ-Davis.github.io/blob/master/_posts/Screen%20Shot%202018-07-06%20at%209.52.58%20AM.png "Charitable Giving Lit Review")
+![Academic literature]({{ site.url }}/public/benson/paper.png)
 
 
 While, the MTA turnstile data will allow us to identify foot traffic at NYC subway stations, we needed to identify additional data sources to help identify which stations may have a high density of the targeted archetype commuters. We utilized data from *Zillow* that detailed median house prices by zip code (as a proxy for household income), a survey from *The Department of Youth and Community Development* that detailed gender density by zip code, and the *The 2016 NYC Tech Ecosystem Report​*, which helped us identify the tech hub zip codes. We were able to map these ancillary data sources to the MTA data by employing the Google Maps API to geocode the subway station locations.
@@ -26,7 +26,7 @@ While, the MTA turnstile data will allow us to identify foot traffic at NYC subw
 This ensemble of data allowed us to zero in on subway stations which were likely to have large amounts of commuters that were women with high household income and worked in the tech industry.
 
 
-![Map of districts]({{ site.url }}/public/benson/district.png)
+![Map of tech hubs]({{ site.url }}/public/benson/district.png)
 
 
 ### Analysis
@@ -34,12 +34,14 @@ Our team worked to munge all of the data sets so that we eventually arrived at a
 
 Once the final data set was created, we applied a scoring algorithm based on a linear combination of the aforementioned variables (we also normalized the foot traffic and median home price variables to be between 0 and 1). After calculating scores for each station, during each day of the week, and time of day (i.e. 'shift'); we then sorted the data set to identify the top ten 'shifts'.
 
-![alt text](https://github.com/AJ-Davis/AJ-Davis.github.io/blob/master/_posts/Max_num.jpg "NYC Tech Hubs")
+![Foot traffic1]({{ site.url }}/public/benson/Max_num.jpg)
+
+![Foot traffic2]({{ site.url }}/public/benson/ftraffic.png)
 
 
 ### Recommendation
 
-![alt text](https://github.com/AJ-Davis/AJ-Davis.github.io/blob/master/_posts/Screen%20Shot%202018-07-06%20at%2012.00.04%20PM.png "Rec Table")
+![Recommendation Table]({{ site.url }}/public/benson/table.png)
 
 As you can see in the table above Penn Station in the afternoon towards the end of the week are the shifts that we recommended to WTWY. Our scoring algorithm weighted foot traffic significantly higher than the other variables.
 
