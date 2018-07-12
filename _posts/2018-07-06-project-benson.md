@@ -26,7 +26,7 @@ While, the MTA turnstile data will allow us to identify foot traffic at NYC subw
 This ensemble of data allowed us to zero in on subway stations which were likely to have large amounts of commuters that were women with high household income and worked in the tech industry.
 
 
-![alt text](https://github.com/AJ-Davis/AJ-Davis.github.io/blob/master/_posts/Screen%20Shot%202018-07-06%20at%2011.07.16%20AM.png "NYC Tech Hubs")
+![Map of districts]({{ site.url }}/public/benson/districts.png)
 
 
 ### Analysis
