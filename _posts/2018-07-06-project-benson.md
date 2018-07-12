@@ -18,7 +18,7 @@ The goal of the project is to utilize MTA turnstile data to create a meaningful 
 
 After brainstorming and consulting existing academic studies, we believe that the target archetype is a high-income, female commuter who is employed in the tech industry.
 
-![alt text](https://i1.rgstatic.net/publication/50205223_A_Literature_Review_of_Empirical_Studies_of_Philanthropy_Eight_Mechanisms_That_Drive_Charitable_Giving/links/0c96053613d45c5db7000000/largepreview.png "Charitable Giving Lit Review")
+![alt text](/Users/ajdavis/github/metis_blog/_posts/Screen Shot 2018-07-06 at 9.52.58 AM.png "Charitable Giving Lit Review")
 
 
 While, the MTA turnstile data will allow us to identify foot traffic at NYC subway stations, we needed to identify additional data sources to help identify which stations may have a high density of the targeted archetype commuters. We utilized data from *Zillow* that detailed median house prices by zip code (as a proxy for household income), a survey from *The Department of Youth and Community Development* that detailed gender density by zip code, and the *The 2016 NYC Tech Ecosystem Report​*, which helped us identify the tech hub zip codes. We were able to map these ancillary data sources to the MTA data by employing the Google Maps API to geocode the subway station locations.
@@ -26,12 +26,18 @@ While, the MTA turnstile data will allow us to identify foot traffic at NYC subw
 This ensemble of data allowed us to zero in on subway stations which were likely to have large amounts of commuters that were women with high household income and worked in the tech industry.
 
 
-![alt text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbfpn1xvhVG430yWYzABT9807mzAwo2ZZmHLcMN-gpc_c4H54P "NYC Tech Hubs")
+![alt text](/Users/ajdavis/github/metis_blog/_posts/Screen Shot 2018-07-06 at 11.07.16 AM.png "NYC Tech Hubs")
 
 
 ### Analysis
 Our team worked to munge all of the data sets so that we eventually arrived at a cross section of subway stations that detailed the average foot traffic during each day of the week (both in the morning and afternoon), the median house price associated with the station's zip code, the percent of the women in the station's zip code, and whether or not the station resided in a 'tech hub'.
 
-Once the final data set was created, we applied a scoring algorithm based on a linear combination of the aforementioned variables. After calculating scores for each station, during each day of the week, and time of day (i.e. 'shift'); we then sorted the data set to identify the top ten 'shifts'.
+Once the final data set was created, we applied a scoring algorithm based on a linear combination of the aforementioned variables (we also normalized the foot traffic and median home price variables to be between 0 and 1). After calculating scores for each station, during each day of the week, and time of day (i.e. 'shift'); we then sorted the data set to identify the top ten 'shifts'.
 
 ### Recommendation
+
+![alt text](/Users/ajdavis/github/metis_blog/_posts/Screen Shot 2018-07-06 at 12.00.04 PM.png "Rec Table")
+
+As you can see in the table above Penn Station in the afternoon towards the end of the week are the shifts that we recommended to WTWY. Our scoring algorithm weighted foot traffic significantly higher than the other variables.
+
+In future analysis we would like to add more relevant variables that were identified in our literature review (e.g. religion, age, family, etc.) as well as refine the weighting in our scoring algorithm.
