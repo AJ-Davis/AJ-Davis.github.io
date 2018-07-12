@@ -34,6 +34,9 @@ Our team worked to munge all of the data sets so that we eventually arrived at a
 
 Once the final data set was created, we applied a scoring algorithm based on a linear combination of the aforementioned variables (we also normalized the foot traffic and median home price variables to be between 0 and 1). After calculating scores for each station, during each day of the week, and time of day (i.e. 'shift'); we then sorted the data set to identify the top ten 'shifts'.
 
+![alt text](/Users/ajdavis/github/metis_blog/_posts/Max_num.jpg "NYC Tech Hubs")
+
+
 ### Recommendation
 
 ![alt text](/Users/ajdavis/github/metis_blog/_posts/Screen Shot 2018-07-06 at 12.00.04 PM.png "Rec Table")
