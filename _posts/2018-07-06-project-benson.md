@@ -4,7 +4,7 @@ title:
 
 #### Identifying the Best NYC Subway Stations to Find Charitable Donors
 
-![alt text](http://catholicandlovinit.com/wp-content/uploads/2018/05/Subwaymap-Htm-Alternative-Map-Of-Nyc-Subway-System.jpg "NYC Subway System")
+![Subway Map](http://catholicandlovinit.com/wp-content/uploads/2018/05/Subwaymap-Htm-Alternative-Map-Of-Nyc-Subway-System.jpg "NYC Subway System")
 
 I just finished my first week at Metis in San Francisco. We spent most of the week reviewing the basic Data Science toolkit which included review of Pandas and Visualization tools in Python, exploratory data analysis (EDA), presentation skills, and GitHub. For our first project we leveraged all of the tools we learned to help identify the optimal NYC subway stations to leaflet. In this article, I will walk you through my team's approach to framing the problem, designing the data pipeline, and ultimately implementing the analysis. You can find the project on GitHub, along with links to all the data.
 
